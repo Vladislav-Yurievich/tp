@@ -1,0 +1,249 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sidebar-link {
+    @apply flex items-center px-4 py-2.5 text-gray-600 hover:bg-blue-50 hover:text-blue-500 rounded-lg transition-colors;
+  }
+  
+  .sidebar-link.active {
+    @apply bg-blue-50 text-blue-500;
+  }
+
+  .schedule-cell {
+    @apply p-2 border border-gray-100;
+  }
+
+  .schedule-event {
+    @apply p-2 rounded-lg text-sm mb-1;
+  }
+
+  .schedule-event-blue {
+    @apply bg-blue-50 text-blue-700;
+  }
+
+  .schedule-event-red {
+    @apply bg-red-50 text-red-700;
+  }
+
+  .schedule-event-green {
+    @apply bg-green-50 text-green-700;
+  }
+
+  .schedule-event-purple {
+    @apply bg-purple-50 text-purple-700;
+  }
+
+  .input-field {
+    @apply w-full p-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+  }
+
+  .btn-primary {
+    @apply bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-100 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-200 transition-colors;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-sm p-6;
+  }
+
+  .card-title {
+    @apply text-xl font-semibold mb-6;
+  }
+}
+
+body {
+  @apply bg-gray-50;
+}
+
+.sidebar {
+  @apply w-64 h-screen bg-white fixed left-0 top-0 border-r border-gray-100 shadow-sm;
+}
+
+.main-content {
+  @apply ml-64 p-6;
+}
+
+/* Calendar styles */
+.calendar-header {
+  @apply flex items-center justify-between mb-6;
+}
+
+.calendar-nav {
+  @apply flex items-center space-x-2 text-sm;
+}
+
+.calendar-nav-item {
+  @apply px-3 py-1 rounded-md hover:bg-gray-100 cursor-pointer;
+}
+
+.calendar-nav-item.active {
+  @apply bg-blue-500 text-white;
+}
+
+.time-column {
+  @apply text-gray-500 font-normal w-24 pr-4 text-right;
+}
+
+.day-column {
+  @apply font-medium text-center border-b border-gray-200 py-3;
+}
+
+/* Profile styles */
+.profile-card {
+  @apply bg-white rounded-lg shadow-sm p-6;
+}
+
+.profile-section {
+  @apply space-y-4;
+}
+
+.profile-field {
+  @apply flex flex-col;
+}
+
+.profile-label {
+  @apply text-sm text-gray-600;
+}
+
+.profile-value {
+  @apply font-medium;
+}
+
+/* Attendance styles */
+.attendance-card {
+  @apply bg-white rounded-lg shadow-sm p-6 mb-6;
+}
+
+.attendance-header {
+  @apply flex items-center justify-between mb-6;
+}
+
+.attendance-title {
+  @apply text-xl font-semibold;
+}
+
+.attendance-stats {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-4 mb-6;
+}
+
+.stat-card {
+  @apply bg-gray-50 rounded-lg p-4;
+}
+
+.stat-value {
+  @apply text-2xl font-bold mb-1;
+}
+
+.stat-label {
+  @apply text-sm text-gray-600;
+}
+
+/* Rating system styles */
+.rating-card {
+  @apply bg-white rounded-lg shadow-sm p-6 mb-6;
+}
+
+.rating-header {
+  @apply flex items-center justify-between mb-6;
+}
+
+.rating-title {
+  @apply text-xl font-semibold;
+}
+
+.rating-table {
+  @apply w-full;
+}
+
+.rating-table th {
+  @apply text-left py-3 px-4 bg-gray-50 font-medium text-gray-600;
+}
+
+.rating-table td {
+  @apply py-3 px-4 border-t border-gray-100;
+}
+
+/* Journal styles */
+.journal-card {
+  @apply bg-white rounded-lg shadow-sm p-6 mb-6;
+}
+
+.journal-header {
+  @apply flex items-center justify-between mb-6;
+}
+
+.journal-title {
+  @apply text-xl font-semibold;
+}
+
+.journal-table {
+  @apply w-full;
+}
+
+.journal-table th {
+  @apply text-left py-3 px-4 bg-gray-50 font-medium text-gray-600;
+}
+
+.journal-table td {
+  @apply py-3 px-4 border-t border-gray-100;
+}
+
+/* Settings styles */
+.settings-card {
+  @apply bg-white rounded-lg shadow-sm p-6 mb-6;
+}
+
+.settings-section {
+  @apply mb-8;
+}
+
+.settings-title {
+  @apply text-xl font-semibold mb-6;
+}
+
+.settings-form {
+  @apply space-y-4;
+}
+
+/* Security styles */
+.security-card {
+  @apply bg-white rounded-lg shadow-sm p-6 mb-6;
+}
+
+.security-section {
+  @apply mb-8;
+}
+
+.security-title {
+  @apply text-xl font-semibold mb-6;
+}
+
+.security-form {
+  @apply space-y-4;
+}
+
+/* Appearance styles */
+.appearance-card {
+  @apply bg-white rounded-lg shadow-sm p-6 mb-6;
+}
+
+.appearance-section {
+  @apply mb-8;
+}
+
+.appearance-title {
+  @apply text-xl font-semibold mb-6;
+}
+
+.theme-option {
+  @apply border border-gray-200 rounded-lg p-4 cursor-pointer hover:border-blue-500;
+}
+
+.theme-option.active {
+  @apply border-blue-500 bg-blue-50;
+}
