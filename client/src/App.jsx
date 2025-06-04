@@ -22,9 +22,9 @@ function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				{!authToken ? (
+	
 					<Route path='*' element={<Auth />} />
-				) : (
+
 					<Route path='/' element={<MainLayout />}>
 						<Route index element={<Navigate to='/profile' replace />} />
 						<Route path='profile' element={<ProfilePage />} />
@@ -37,7 +37,6 @@ function App() {
 						<Route path='appearance' element={<AppearancePage />} />
 						<Route path='*' element={<Navigate to='/profile' replace />} />
 					</Route>
-				)}
 			</Routes>
 		</BrowserRouter>
 	)
