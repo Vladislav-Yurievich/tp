@@ -9,7 +9,7 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5173,
     allowedHosts: [
-      'tp-client-wixs.onrender.com' 
+      'tp-frontend-8uq7.onrender.com'
     ],
     watch: {
       usePolling: true,
